@@ -1,0 +1,96 @@
+<%= stylesheet_link_tag 'toukou', :media => "all" %>
+
+
+<h1>(自分の題名)</h1>
+<h3>新規投稿ページ</h3>
+<%= form_for @profile do |f| %>
+
+  <div class="dete">
+    <%= f.date_field :birthday %>
+  </div>
+
+  <div class="field">
+    <%= f.label :Profile_name %>
+    <%= f.text_field :name, :size => 30 %>
+  </div>
+
+  <div class="field">
+    <%= f.label :Profile_blood %>
+    <%= f.text_field :blood, :size => 30 %>
+  </div>
+
+ <div class="field">
+    <%= f.label :Profile_hobby %>
+    <%= f.text_field :hobby, :size => 30 %>
+  </div>
+
+  <div class="field">
+    <%= f.label :Profile_character %>
+    <%= f.text_field :character, :size => 30 %>
+  </div>
+
+  <div class="field">
+  <%= f.label :Profile_osi %>
+  <%= f.text_field :osi, :size => 30 %>
+  </div>
+
+  <div class="field">
+  <%= f.label :Profile_love %>
+  <%= f.text_field :love, :size => 30 %>
+  </div>
+
+  <div class="field">
+  <%= f.label :Profile_like %>
+  <%= f.text_field :like, :size => 30 %>
+  </div>
+
+  <div class="field">
+  <%= f.label :Profile_if1 %>
+  <%= f.text_field :if1, :size => 30 %>
+  </div>
+
+  <div class="field">
+  <%= f.label :Profile_if2 %>
+  <%= f.text_field :if2, :size => 30 %>
+  </div>
+
+  <div class="field">
+  <%= f.label :Profile_if3 %>
+  <%= f.text_field :if3, :size => 30 %>
+  </div>
+
+  <div class="field">
+  <%= f.label :Profile_free %>
+  <%= f.text_field :free, :size => 30 %>
+  </div>
+
+  <div class="field">
+  <%= f.label :Profile_best %>
+  <%= f.text_field :best, :size => 30 %>
+  </div>
+
+  <div class="field">
+  <%= f.label :Profile_first %>
+  <%= f.text_field :first, :size => 30 %>
+  </div>
+
+  <div class="field">
+  <%= f.label :Profile_second %>
+  <%= f.text_field :second, :size => 30 %>
+  </div>
+
+  <div class="field">
+  <%= f.label :Profile_third %>
+  <%= f.text_field :third, :size => 30 %>
+  </div>
+
+  <div class="field">
+    <%= f.label :image %>
+    <%= f.file_field :image %>
+  </div>
+  
+  <%= f.submit "投稿する" %>
+<% end %>
+
+<%= link_to "トップページへ", top_path %>
+

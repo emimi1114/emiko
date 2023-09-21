@@ -1,0 +1,49 @@
+<%= stylesheet_link_tag 'signup', :media => "all" %>
+	
+<div class="bg_pattern Paper_v2"></div>
+
+<div class="emiko">
+ <div class="hako">
+   
+      <br>
+        <h2>Sign up</h2>
+      <br>
+  
+      <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+        <%= render "users/shared/error_messages", resource: resource %>
+
+        <div class="field">
+          <p><%= f.label :name %><br /></p>
+          <%= f.text_field :name, autofocus: true %>
+        </div>
+
+        <div class="field">
+          <p><%= f.label :email %><br /></p>
+          <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+        </div>
+
+        <div class="field">
+          <p><%= f.label :password %></p>
+          <% if @minimum_password_length %>
+          <em>(<%= @minimum_password_length %> characters minimum)</em>
+          <% end %><br />
+          <%= f.password_field :password, autocomplete: "new-password" %>
+        </div>
+
+        <div class="field">
+          <p><%= f.label :password_confirmation %><br /></p>
+          <%= f.password_field :password_confirmation, autocomplete: "new-password" %>
+        </div>
+
+        <div class="actions">
+         <%= f.submit "Sign up" %>
+        </div>
+       <% end %>
+
+   
+
+
+
+    <%= render "users/shared/links" %>
+ </div>
+</div>

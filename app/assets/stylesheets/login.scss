@@ -1,0 +1,85 @@
+.bg_pattern2 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #FFF4F4;
+    z-index: -1;
+  }
+  .Paper_v3 {
+    background-image:
+      repeating-linear-gradient(to bottom,
+        transparent 25px,
+        rgba(0, 0, 0, 0.04) 26px,  rgba(0, 0, 0, 0.04) 26px,
+        transparent 27px,  transparent 51px, 
+        rgba(0, 0, 0, 0.04) 52px,  rgba(0, 0, 0, 0.04) 52px,
+        transparent 53px,  transparent 77px, 
+        rgba(0, 0, 0, 0.04) 78px,  rgba(0, 0, 0, 0.04) 78px,
+        transparent 79px,  transparent 103px, 
+        rgba(0, 0, 0, 0.04) 104px,  rgba(0, 0, 0, 0.04) 104px,
+        transparent 105px,  transparent 129px, 
+        rgba(0, 0, 0, 0.04) 130px,  rgba(0, 0, 0, 0.04) 130px),
+   
+      repeating-linear-gradient(to right,
+        transparent 25px,
+        rgba(0, 0, 0, 0.04) 26px,  rgba(0, 0, 0, 0.04) 26px,
+        transparent 27px,  transparent 51px, 
+        rgba(0, 0, 0, 0.04) 52px,  rgba(0, 0, 0, 0.04) 52px,
+        transparent 53px,  transparent 77px, 
+        rgba(0, 0, 0, 0.04) 78px,  rgba(0, 0, 0, 0.04) 78px,
+        transparent 79px,  transparent 103px, 
+        rgba(0, 0, 0, 0.04) 104px,  rgba(0, 0, 0, 0.04) 104px,
+        transparent 105px,  transparent 129px, 
+        rgba(0, 0, 0, 0.04) 130px,  rgba(0, 0, 0, 0.04) 130px);
+  }
+
+  rt {
+    font-size: 0.3em; /* 文字サイズを大きく */
+    text-align: center;
+  }
+ 
+
+.hanai{
+    font-family: 'Chau Philomene One', sans-serif;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    
+}
+.hako2{
+    position: absolute;
+    width: 40%;
+    padding: 0.2em 0.5em;
+    color: #565656;
+    background: #FFFBFB;
+    box-shadow: 0px 0px 0px 15px #FFFBFB;
+    border: dashed 2px #8F4145;
+    border-radius: 100px;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    text-align: center;
+    font-family: 'Chau Philomene One', sans-serif;
+    position: relative;
+}
+input[type="email"] {
+    background-color: #FFF4F4;
+    border: solid 1px #8F4145;
+  }
+input[type="password"] {
+    background-color: #FFF4F4;
+    border: solid 1px #8F4145;
+  }
+input[type="submit"] {
+    width: 100px;
+    background-color: #8F4145;
+    font-size: 14px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    border-radius: 100px;
+    color: #ffffff;
+    font-family: 'Chau Philomene One', sans-serif;
+    border: solid 3px #8F4145
+
+  }
